@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assalamualaikum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✨ Quotes Islami</h1>
+  </header>
+
+  <main>
+    <section class="tools">
+      <div class="tool-card" id="text-tools">Text tools</div>
+      <div class="tool-card" id="world-clock">Jam Dunia</div>
+      <div class="tool-card">Jadwal Sholat</div>
+      <div class="tool-card">Arah Kiblat</div>
+      <div class="tool-card">Quotes Islami tentang <em>kekuatan sesungguhnya</em><br><small>(file MP3 dibuat oleh 💝)</small></div>
+      <div class="tool-card">Catatan Cepat</div>
+      <div class="tool-card">Habit Tracker</div>
+      <div class="tool-card">Mood Journal</div>
+      <div class="tool-card">Reminder Custom</div>
+      <div class="tool-card">Inspirasi Harian</div>
+    </section>
+
+    <!-- Container Jam Dunia -->
+    <section id="world-clock-container" class="hidden">
+      <h2>🕒 Jam Dunia</h2>
+      <div class="clock-grid">
+        <div class="clock"><strong>Jakarta</strong><br><span id="time-jakarta"></span></div>
+        <div class="clock"><strong>London</strong><br><span id="time-london"></span></div>
+        <div class="clock"><strong>Mekkah</strong><br><span id="time-mecca"></span></div>
+        <div class="clock"><strong>New York</strong><br><span id="time-ny"></span></div>
+        <div class="clock"><strong>Tokyo</strong><br><span id="time-tokyo"></span></div>
+      </div>
+    </section>
+
+    <!-- Musik Latar -->
+    <section class="card" style="margin-top:12px">
+      <h2>2) Musik Latar</h2>
+      <audio id="player" loop>
+        <source src="Juicy Luicy - Lantas (Official Lyric Video) - Emotion Entertainment.mp3" type="audio/mpeg">
+      </audio>
+      <div class="music-controls">
+        <button id="musicToggle">🔊 Play / Pause</button>
+        <label class="small">Volume</label>
+        <input id="musicVol" type="range" min="0" max="1" step="0.01" value="0.18">
+        <input id="musicUrl" type="text" placeholder="(optional) url mp3">
+        <button id="setMusic">Set</button>
+      </div>
+    </section>
+
+    <p class="note">📌 Fitur <strong>Daftar Kota</strong> bisa digunakan dengan baik.</p>
+  </main>
+
+  <footer>
+    <p>“Kekuatan sesungguhnya bukan terletak pada jasad yang perkasa, melainkan pada hati yang senantiasa bersabar dan bertawakal kepada Allah.”</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+        </html>
