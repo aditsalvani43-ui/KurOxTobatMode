@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0fdf4;
+  color: #064e3b;
+}
+
+header {
+  background: #10b981;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 4px solid #047857;
+}
+
+h1 {
+  margin: 0;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.tool-card {
+  background: white;
+  border: 2px solid #10b981;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+.tool-card:nth-child(1) { animation-delay: 0.1s; }
+.tool-card:nth-child(2) { animation-delay: 0.2s; }
+.tool-card:nth-child(3) { animation-delay: 0.3s; }
+.tool-card:nth-child(4) { animation-delay: 0.4s; }
+.tool-card:nth-child(5) { animation-delay: 0.5s; }
+.tool-card:nth-child(6) { animation-delay: 0.6s; }
+.tool-card:nth-child(7) { animation-delay: 0.7s; }
+.tool-card:nth-child(8) { animation-delay: 0.8s; }
+.tool-card:nth-child(9) { animation-delay: 0.9s; }
+.tool-card:nth-child(10) { animation-delay: 1s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  background: #ecfdf5;
+}
+
+.note {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #10b981;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Jam Dunia */
+#world-clock-container {
+  padding: 2rem;
+  background: #ecfdf5;
+  border-top: 3px solid #10b981;
+}
+
+#world-clock-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.clock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.clock {
+  background: white;
+  border: 1px solid #10b981;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Musik Latar */
+.card {
+  background: #ffffff;
+  border: 2px solid #10b981;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.music-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-controls button {
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.music-controls button:hover {
+  background: #047857;
+}
+
+.music-controls input[type="range"] {
+  width: 120px;
+}
+
+.music-controls input[type="text"] {
+  flex: 1;
+  min-width: 180px;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
